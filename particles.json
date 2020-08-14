@@ -32,7 +32,7 @@
         "line_linked": {
             "enable": true,
             "distance": 90,
-            "color": "#313131",
+            "color": "#fff",
             "width": 1
         },
         "move": {
