@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/daisy.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="momoland"></div>
+
+        <script src="js/daisy.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                daisyjs(
+                    document.getElementById('momoland'),
+                    {
+                        dotColor: '#fff',
+                        lineColor: '#fff'
+                    },
+                    false
+                );
+            });
+        </script>
+    </body>
+</html>
