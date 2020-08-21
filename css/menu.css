@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 30px;
+    font-family: sans-serif;
+    background-image: url('https://lh3.googleusercontent.com/proxy/nHPc8ahe36ef40PV5MK1Xn5CQpKe1thtyeksARLFZy_TjMmx_HCIUvDK2J2H9CRxmlqSmzVN_egb7GR7kgrRyv1Dj1isJEyR7yQa2VQxHekTs3SVb_meXLnBjKMTS6AAHQibkE3xYiHrVm99UWphUPor1uY');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#container {
+    position: relative;
+    width: 940px;
+}
+
+#container:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+#menu {
+    position: relative;
+    float: left;
+    width: 100%;
+    border-right: 50px;
+    background: #1b3d53;
+    padding: 10px 30px;
+}
+
+#menu, #menu ul{
+    list-style: none;
+}
+
+#menu > li {
+    float: left;
+    position: relative;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 0 0 rgba(0, 0, 0, 0.1);
+    perspective: 1000px;
+}
+
+#menu > li:first-child{
+    box-shadow: -1px 0 0 rgba(0, 0, 0, 0.1), 1px 0 0 rgba(225, 225, 225, 0.25);
+}
+
+#menu a {
+    display: block;
+    position: relative;
+    z-index: 10;
+    padding: 13px 20px 13px 20px;
+    text-decoration: none;
+    color: #fff;
+    line-height: 1;
+    font-weight: 400;
+    font-size: 16px;
+    background: transparent;
+    transition: all 0.25s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#menu > li:hover > a {
+    background-color: #1b3d53;
+    color: rgba(0, 223, 252, 1);
+    text-shadow: none;
+}
+
+#menu li ul {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    width: 200px;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: transparent;
+    overflow: hidden;
+    transform-origin: 50% 0%;
+}
+
+#menu li:hover ul {
+    padding: 15px 0;
+    background-color: #1b3d53;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: 1px 1px 7px rgba(225, 225, 225, 0.5);
+    animation-name: swingdown;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+@keyframes swingdown {
+    0%{
+        opacity: 0.99999;
+        transform: rotateX(90deg);
+    }
+
+    30%{
+        transform: rotateX(-20deg) rotateY(5deg);
+        animation-timing-function: ease-in-out;
+    }
+
+    65%{
+        transform: rotateX(20deg) rotateY(-3deg);
+        animation-timing-function: ease-in-out;
+    }
+}
+
+#menu li li a{
+    padding-left: 15px;
+    font-weight: 300;
+    color: #ddd;
+    text-shadow: none;
+    border-top: 1px dotted transparent;
+    border-bottom: 1px dotted transparent;
+    transition: all 0.15s linear;
+}
+
+#menu li li a:hover{
+    color: rgba(0, 223, 252, 1);
+    border-top: 1px dotted rgba(225, 225, 2250, 0.15);
+    border-bottom: 1px dotted rgba(225, 225, 2250, 0.15);
+    background-color: rgba(0, 223, 252, 0.02);
+}
