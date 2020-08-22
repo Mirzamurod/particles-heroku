@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-image: url('https://images.wallpapersden.com/image/download/iron-man-minimalist_66484_3840x2160.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+html, body, .banner, .container{
+    height: 100%;
+    text-align: center;
+}
+
+h1{
+    position: relative;
+    font-size: 56px;
+    top: 1rem;
+    color: #fff;
+}
+
+.block{
+    height: 300px;
+    background-color: #b1bfd8;
+    background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);
+    margin-bottom: 20px;
+}
