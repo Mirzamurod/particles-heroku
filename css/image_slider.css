@@ -29,6 +29,12 @@ a {
     margin-bottom: 0 !important;
 }
 
+/* .camera_thumbs{
+    margin-top: -100px;
+    position: relative;
+    z-index: 1;
+} */
+
 .camera_thumbs_cont {
     border-radius: 0;
     background-color: rgba(0, 0, 0, 0.2);
