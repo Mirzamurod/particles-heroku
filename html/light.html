@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Light</title>
+		<link rel="stylesheet" type="text/css" href="../css/light.css">
+	</head>
+	<body>
+		<section>
+			<h2>Light</h2>
+			<div class="light"></div>
+		</section>
+
+		<script type="text/javascript">
+			var pos = document.documentElement;
+			pos.addEventListener('mousemove', e => {
+				pos.style.setProperty('--x', e.clientX + 'px')
+				pos.style.setProperty('--y', e.clientY + 'px')
+			})
+		</script>
+	</body>
+</html>
