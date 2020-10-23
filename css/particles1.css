@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-family: 'Comic Sans MS', sans-serif;
+}
+
+body {
+	background-color: #000;
+}
+
+#particles-js {
+	position: fixed;
+	width: 100%;
+}
+
+.all {
+	position: relative;
+	text-align: center;
+	top: 50px;
+	margin: 0 100px;
+}
+
+p {
+	width: 300px;
+	margin: 0 auto;
+}
