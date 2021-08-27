@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.8.3/tailwind.min.css"
+        />
+        <link rel="stylesheet" href="../css/vanilla3d.css" />
+        <title>Vanilla 3d</title>
+    </head>
+    <body>
+        <div class="grid place-items-center lg:grid-cols-3">
+            <div class="card rounded-lg px-8 py-20 relative hover:shadow-xl">
+                <div class="image image-1">
+                    <img src="./../images/SijBZ1.jpg" alt="" />
+                </div>
+            </div>
+            <div class="card rounded-lg px-8 py-20 relative hover:shadow-xl">
+                <div class="image image-1">
+                    <img src="./../images/SijBZ1.jpg" alt="" />
+                </div>
+            </div>
+            <div class="card rounded-lg px-8 py-20 relative hover:shadow-xl">
+                <div class="image image-1">
+                    <img src="./../images/SijBZ1.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+        <script>
+            VanillaTilt.init(document.querySelectorAll('.card'), {
+                max: 25,
+                speed: 1000,
+                transition: true,
+            })
+        </script>
+    </body>
+</html>
