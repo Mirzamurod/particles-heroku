@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./../css/timeLine.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <section class="block">
+                <div class="each-year">
+                    <div class="title">2021</div>
+                    <div class="each-event">
+                        <div class="event-description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quos
+                            quia asperiores adipisci a nam odit voluptates libero quibusdam est
+                            perspiciatis esse nobis impedit quasi sed, natus aperiam sint alias.
+                        </div>
+                    </div>
+                    <div class="each-event">
+                        <div class="event-description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quos
+                            quia asperiores adipisci a nam odit voluptates libero quibusdam est
+                            perspiciatis esse nobis impedit quasi sed, natus aperiam sint alias.
+                        </div>
+                    </div>
+                    <div class="each-event">
+                        <div class="event-description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quos
+                            quia asperiores adipisci a nam odit voluptates libero quibusdam est
+                            perspiciatis esse nobis impedit quasi sed, natus aperiam sint alias.
+                        </div>
+                    </div>
+                    <div class="each-event">
+                        <div class="event-description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quos
+                            quia asperiores adipisci a nam odit voluptates libero quibusdam est
+                            perspiciatis esse nobis impedit quasi sed, natus aperiam sint alias.
+                        </div>
+                    </div>
+                    <div class="each-event">
+                        <div class="event-description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quos
+                            quia asperiores adipisci a nam odit voluptates libero quibusdam est
+                            perspiciatis esse nobis impedit quasi sed, natus aperiam sint alias.
+                        </div>
+                    </div>
+                    <div class="each-event">
+                        <div class="event-description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quos
+                            quia asperiores adipisci a nam odit voluptates libero quibusdam est
+                            perspiciatis esse nobis impedit quasi sed, natus aperiam sint alias.
+                        </div>
+                    </div>
+                    <div class="each-event">
+                        <div class="event-description">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quos
+                            quia asperiores adipisci a nam odit voluptates libero quibusdam est
+                            perspiciatis esse nobis impedit quasi sed, natus aperiam sint alias.
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="block">
+                <div class="each-year">
+                    <div class="title">2022</div>
+                    <div class="each-event">
+                        <div class="event-describtion">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et quaerat
+                            iste impedit placeat labore recusandae vitae, facere quibusdam eum
+                            repudiandae sunt, animi exercitationem doloremque rerum perferendis,
+                            illo ea beatae mollitia!
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+        <script>
+            var $element = $('.each-event, title')
+            var $window = $(window)
+            $window.on('scroll resize', check_for_fade)
+            $(window).trigger('scroll')
+            function check_for_fade() {
+                var window_height = $window.height()
+                $.each($element, function (event) {
+                    var $element = $(this)
+                    var element_height = $element.outerHeight()
+                    var element_offset = $element.offset().top
+                    space = window_height - (element_height + element_offset - $(window).scrollTop())
+                    if (space < 60) {
+                        $element.addClass('non-focus')
+                    } else {
+                        $element.removeClass('non-focus')
+                    }
+                })
+            }
+        </script>
+    </body>
+</html>
